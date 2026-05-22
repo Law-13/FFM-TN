@@ -1,0 +1,23 @@
+{
+  "name": "ffm-community-tn",
+  "version": "1.0.0",
+  "description": "FFM Community TN - Free Fire Max Tamil Nadu Community Management Platform",
+  "main": "server/src/app.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [
+    "freefire",
+    "esports",
+    "tamil-nadu",
+    "community"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
