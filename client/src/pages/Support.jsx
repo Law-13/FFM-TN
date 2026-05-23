@@ -52,7 +52,8 @@ export default function Support({ whatsappLink }) {
     setSuccessMsg('');
 
     try {
-      const response = await fetch('/api/support/submit', {
+      const apiUrl = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${apiUrl}/api/support/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

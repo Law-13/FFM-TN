@@ -262,7 +262,8 @@ export default function EventRegistration() {
     submitData.append('prevPoster', files.prevPoster);
 
     try {
-      const response = await fetch('/api/event/register', {
+      const apiUrl = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${apiUrl}/api/event/register`, {
         method: 'POST',
         body: submitData
       });
