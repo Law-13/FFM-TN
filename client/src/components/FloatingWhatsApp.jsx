@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function FloatingWhatsApp({ inviteLink = 'https://chat.whatsapp.com/0029VaF7rC1H3PVS8jLzQ72L' }) {
+export default function FloatingWhatsApp({ inviteLink = 'https://whatsapp.com/channel/0029VbCoU6s1CYoRjeXGvA2y' }) {
   const [showTooltip, setShowTooltip] = useState(false);
 
   useEffect(() => {

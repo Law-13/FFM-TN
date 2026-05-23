@@ -22,7 +22,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   // Editable configuration links
-  const WHATSAPP_CHANNEL_LINK = 'https://chat.whatsapp.com/0029VaF7rC1H3PVS8jLzQ72L';
+  const WHATSAPP_CHANNEL_LINK = 'https://whatsapp.com/channel/0029VbCoU6s1CYoRjeXGvA2y';
 
   useEffect(() => {
     // 1.5 seconds premium loading screen overlay
