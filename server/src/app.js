@@ -67,6 +67,15 @@ app.use((err, req, res, next) => {
   });
 });
 
+// Global Error Handler to catch Multer or other unhandled exceptions and return JSON
+app.use((err, req, res, next) => {
+  console.error('Unhandled Backend Error:', err.message);
+  res.status(500).json({ 
+    success: false, 
+    message: err.message || 'An unexpected server error occurred.' 
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`===================================================`);
   console.log(`🚀 FFM COMMUNITY TN BACKEND STARTING ON PORT ${PORT}`);
